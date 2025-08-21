@@ -1,0 +1,13 @@
+// creating the database
+CREATE DATABASE mydb;
+
+// selecting the db
+\c mydb;
+
+// creating a table
+CREATE TABLE todos (
+id SERIAL NOT NULL PRIMARY KEY,
+todo VARCHAR(255) NOT NULL,
+status BOOLEAN NOT NULL DEFAULT  FALSE
+);
+
